@@ -1,1 +1,81 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Management System API</title>
+    <style>
+        /* Add your CSS styles here */
+        /* For simplicity, styles are not provided in this example */
+    </style>
+</head>
+
+<body>
+    <!-- INTRO SECTION -->
+    <header>
+        <h1>RESTful API for Task Management System</h1>
+        <link rel="Landing page" href="images/Landing page.png" type="image/png" alt="Cover Image" width="800" height="400">
+        <p>Create a web service that allows users to manage their tasks using a task management API where users can create, update, delete tasks and set deadlines.</p>
+        <nav>
+            <ul>
+                <li><a href="#users-section">User's Section</a></li>
+                <li><a href="#tasks-section">Task's Section</a></li>
+                <!-- Add more navigation elements as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FEATURE SECTION -->
+    <section id="users-section">
+        <h2>User Section</h2>
+        <link rel="user" href="images/user.png" type="image/png" alt="User Section Image" width="400" height="300">
+        <h3>API Endpoint for user implementation</h3>
+        <p>GET HTTP verb - Used to get all the users in the database or a specific user based on their email address or user’s id.<br>
+            PUT HTTP verb - Used to update user’s information - the user to be updated is retrieved by their unique id’s.<br>
+            POST HTTP verb - Create’s a new user - Provide the following details:</p>
+        <pre>
+{
+  "email_address": "string",
+  "first_name": "string",
+  "last_name": "string"
+}
+        </pre>
+    </section>
+
+    <section id="tasks-section">
+        <h2>Task's Section</h2>
+        <link rel="Tasks" href="images/Tasks.png" type="image/png" alt="Task Section Image" width="400" height="300">
+        <h3>API Endpoint for task implementation</h3>
+        <p>GET HTTP verb - Used to get all the tasks in the database or a specific task based on task id, or email address or to retrieve all tasks together with their user.<br>
+            PUT HTTP verb - Used to update task’s information - the tasks to be updated is retrieved by their unique id’s.<br>
+            POST HTTP verb - Create’s a new task - Provide the following details:</p>
+        <pre>
+{
+  "completion status": "string",
+  "days to complete": 0,
+  "description": "string",
+  "user’s email_address": "string",
+  "priority level": "string",
+  "title": "string"
+}
+        </pre>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section>
+        <h2>About</h2>
+        <p>Planning one’s self is a very important aspect of being very successful in all things that a person’s endeavors. Personally, I have come to realize that I archive a lot and complete all my daily or long-term tasks when I write them down rather than depending on my memory to do them. As part of Portfolio Project for Holberton School, implementing my API for task management system was one of the greatest accomplishments I consider to have achieved in my life. I look forward to improving my API to something that can be used to develop a mobile application or a website.</p>
+        <p>Links to each team member’s profiles:</p>
+        <ul>
+            <li><a href="http://www.linkedin.com/in/stepholo0">Linkedin - Stephen B. Oloo</a></li>
+            <li><a href="https://github.com/stepholo">Github - Stephen B. Oloo</a></li>
+            <li><a href="https://twitter.com/Stevenob12">Twitter - Stephen Oloo</a></li>
+        </ul>
+        <p>Link to the GitHub repository for the project: <a href="https://github.com/stepholo/RESTful-API-BASED-TASK-MANAGEMENT-SYSTEM">RESTful API for Task Management</a></p>
+    </section>
+
+    <!-- Include any additional sections as required -->
+
+</body>
+
+</html>
